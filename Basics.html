@@ -1,0 +1,232 @@
+<!--HyperText Markup Language
+Tool used to make websites-->
+<!-- CSS: Change the appearance/style of HTML elements--> 
+<!--HTML STRUCTURE
+    <!DOCTYPE html>
+
+    <html> # represents the entire webpage
+            # nesting: element inside another element
+        <head>
+            <title> First website </title> # Name of the website shown in the tab
+        </head>  # all elements are not visible in the page 
+        <body></body> # all the elements that are visible in the page
+    </html>  
+
+-->
+
+
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <title> Portfolio </title>
+        <!-- Void elements: elements that does not require closing tags. -->
+        <link rel="stylesheet" href="para.css"> <!--connects CSS files to html file--> 
+        <link rel="stylesheet" href="buttons.css"> <!--connects CSS files to html file--> 
+        <link rel="stylesheet" href="image.css"> <!--connects CSS files to html file--> 
+        <link rel="stylesheet" href="div.css"> <!--connects CSS files to html file--> 
+    </head>
+
+    <body>
+
+<!--class: provides a label for button.-->
+<!-- <div> : It is a container that holds a set of html elements -->
+
+        <div class="header"> 
+
+            <div class="right-header">                
+                <img class="icon" src="P:\SDE\HTML CSS\icons\3ca3859e455c0f7b1d3a38b4f9853583.jpg" />
+                <img class="icon" src="P:\SDE\HTML CSS\icons\8b53af1f83db6a5bdd4c25fba3770767.jpg" /> 
+            </div>
+
+            <div class="middle-header">
+                <input type="text" placeholder="search" class="search-bar"> 
+
+                <button class="header_button">
+                        <img src="P:\SDE\HTML CSS\icons\c55fab3369c57ba84f2d4a685ab29f69.jpg" class="icon"> 
+                </button> 
+
+                <button class="header_button">
+                    <img src="P:\SDE\HTML CSS\icons\578f00d76c9175d203411fbfc1d2253a.jpg" class="icon"> 
+                </button>
+
+            </div>
+
+            <div class="left-header"> 
+                <img class="icon" src="P:\SDE\HTML CSS\icons\time.jpg" />
+                <img class="icon" src="P:\SDE\HTML CSS\icons\ba3c1cc0caaa93dc64b261ce60ed30a1.jpg" />
+                <img class="icon" src="P:\SDE\HTML CSS\icons\30769b78a748fdfef57d1e1e43149d5a.jpg" /> 
+            </div>
+
+        </div>
+
+        <div>
+            <div class="side-bar">
+                <img class="icon" src="P:\SDE\HTML CSS\icons\icon1.jpg" />
+                <img class="icon" src="P:\SDE\HTML CSS\icons\icon2.jpg" /> 
+                <img src="P:\SDE\HTML CSS\icons\icon3.jpg" class="icon"> 
+            </div>
+            </div>
+        </div>
+
+        <!-- Represents paragraph-->
+
+        <p class="wel"> Are you lost? </p> 
+        <p class="desc">I am intertwined between the frail strings of roguery and morality, contemplating what is right for the universe and wrong for humanity. My home is a cavern carved from splintered cathedrals. Locals and strangers; I decide on the ones that stay and the bunch to leave.  "Who are you?", an inane human asks, "A being that your interned sense cannot understand.", I reply, "Why are you here?", it utters another unavailing question, "To recite the anecdotes of the abyss.",  I answer with a composure built from comprehending generations of the unknown and known. 
+
+
+        <p class="desc">  "You are a poet." <br>
+            "Yes, I am."
+        </p>
+
+
+
+<!--CSS position
+    1. Used to make the page scroll with header not moving
+    2. used to put elements on top of other elements.-->
+        <!-- Text element: text inside paragraphs that can be modified.
+            <span> : allows to make our own changes to the text/
+            default:
+            <strong> : bolden certain text.
+            <u> : underline -->
+        
+        <p class="define"> Wanderers &#183 Dreamers &#183 Lovers</p>  <!-- &#183 is a html entity (They llow to write special characters in HTML)-->
+<!--Display property of CSS:
+    1. Block element: takes up the entire line. Forced to be on a full line (paragraph, div)
+    2. Inline block element: only takes up required space.
+    3. Inline  element: text within a text
+    -->
+
+<!-- CSS layouts: 
+    Vertical Layouts: One dic stack above the other 
+    Horizontal Layouts: one div after the other -->
+<div class="blog-prev">
+
+   <div class="blog_prev">
+
+        <div>
+            <img class="prev" src="P:\SDE\HTML CSS\Pictures\writing.jpg"> 
+        </div>
+        
+        <div class="blog-info"> 
+            <div>
+                <img class="user" src="P:\SDE\HTML CSS\Thumbnails\10a5dc769354da17e0ac3f5955406c68.jpg">  
+            </div>
+            <div>
+                <p class="pic-cap"> stygian ink compose whispers of the forbidden,  
+                    feather-touched by aureate delight. </p>  
+            
+                </div>
+        </div>
+    </div>
+        
+
+    <div class="blog_prev">
+
+        <div>
+            <img class="prev" src="P:\SDE\HTML CSS\Pictures\coffee.jpg"> 
+        </div>
+        
+        <div class="blog-info"> 
+            <div>
+                <img class="user" src="P:\SDE\HTML CSS\Thumbnails\87c443a4368f2113dde2b7890d494623.jpg">  
+            </div>
+            <div>
+                <p class="pic-cap"> Frozen amber dreams melt into liquid ecstacy with every sip. </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="blog_prev">
+
+        <div>
+            <img class="prev" src="P:\SDE\HTML CSS\Pictures\doggo.jpg"> 
+        </div>
+        
+        <div class="blog-info"> 
+            <div>
+                <img class="user" src="P:\SDE\HTML CSS\Thumbnails\36860246cfa38303e73ae73f9dbac086.jpg">  
+            </div>
+            <div>
+                <p class="pic-cap"> In the golden light, innocence hides behind tiny, trembling paws.</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="blog_prev">
+
+        <div>
+            <img class="prev" src="P:\SDE\HTML CSS\Pictures\donuts.jpg"> 
+        </div>
+        
+        <div class="blog-info"> 
+            <div>
+                <img class="user" src="P:\SDE\HTML CSS\Thumbnails\X.jpg">  
+            </div>
+            <div>
+                <p class="pic-cap"> Circles of desire, kissed by caramel light and sweet indulgence </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog_prev">
+
+            <div>
+                <img class="prev"  src="P:\SDE\HTML CSS\Pictures\honey.jpg"> 
+            </div>
+            
+            <div class="blog-info"> 
+                <div>
+                    <img class="user" src="P:\SDE\HTML CSS\Thumbnails\ac0a771ee95d1ea6b313d2fac6d25b7c.jpg">  
+                </div>
+                <div>
+                    <p class="pic-cap"> Nature’s poetry, written in hexagons and dripping with sweetness </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="blog_prev">
+
+            <div>
+                <img class="prev" src="P:\SDE\HTML CSS\Pictures\orange.jpg"> 
+            </div>
+            
+            <div class="blog-info"> 
+                <div>
+                    <img class="user" src="P:\SDE\HTML CSS\Thumbnails\b91a01091375cc6e7b0bf9fe667069f8.jpg">  
+                </div>
+                <div>
+                    <p class="pic-cap"> Sunlight trapped in citrus, bursting with golden fire </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="blog_prev">
+
+        <div>
+            <img class="prev" src="P:\SDE\HTML CSS\Pictures\butterfly.jpg"> 
+        </div>
+        
+        <div class="blog-info"> 
+            <div>
+                <img class="user" src="P:\SDE\HTML CSS\Thumbnails\e79c55a9a6ec95c514bc398862e3bc27.jpg">  
+            </div>
+            <div>
+        <p class="pic-cap"> A fleeting ember, caught between earth and sky’s farewell glow </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
+<!--All these are called HTML element. Can be represented in the web page-->
+<!-- <button> this is called a html tag. button in the syntax is the tag name
+    <button> -> closing tag
+    </button> -> opening tag -->
+
+<!-- a: anchor element. Link to another website
+ href, target are HTML attributes. It defines how an element behaves.
+ href: Defines the link
+ target: if the webpage should open in the same or different page-->
