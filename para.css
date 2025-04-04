@@ -1,0 +1,56 @@
+            /* Paragraph comes with margin spacing by default */
+            
+            
+            .title{
+                font-family: Times;
+                font-size:50px;
+                background-color: blanchedalmond;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 0;
+                padding-top: 10px;
+                padding-bottom:10px;
+            }
+            .wel{
+                margin-top:0;
+                font-family: Times;
+                font-size:25px;
+                font-style: italic;
+            }
+        
+            .desc{
+                font-family: Times;
+                font-size:15px;
+                line-height: 20px; /*height difference between line */
+            }
+        
+            .define{
+                font-family: Times;
+                font-size:15px;
+                width:1000px; /* box sizing the content  */
+                line-height: 20px; /*height difference between line */
+                color: rgb(78, 75, 75);
+            }
+            
+            .span-class{
+                color:rgb(100, 101, 127)
+            }
+        
+            .span-class:hover{
+                text-decoration: underline;
+            }
+            
+            .pic-cap {
+                font-size: 15px;
+                margin: 0; /* Remove extra margin */
+                line-height: 1.4; /* Adjust text spacing */
+            
+            }
+            
+
+            .auth{
+                font-size: 13px;
+                color: rgb(59, 59, 59);
+                margin-top: 5px; /* Adjust this to position it properly */
+                margin-left: 32px
+            }
