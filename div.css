@@ -1,0 +1,93 @@
+.blog-info {
+    display: grid;
+    align-items: start; 
+    grid-template-columns: 40px 1fr; /* Adjust image width */
+    column-gap: 10px; /* Space between image and text */
+    max-width: 400px; /* Adjust width as needed */
+    row-gap: 10px; 
+}
+
+.blog-prev {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Adjust image width */
+    align-items: center; /* Align image and text vertically */
+    column-gap: 10px; /* Space between image and text */
+    max-width: 250px; /* Adjust width as needed */
+    row-gap: 20px; 
+}
+
+.header{
+    height: 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+
+    background-color: rgb(241, 203, 156);
+    width: 100%;  
+    gap:50px;
+    padding: 0;
+
+}
+ 
+.left-header{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    justify-content:left; 
+}
+
+.right-header{
+    width:300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content:right;
+   /* flex-shrink: shrinks with limited width.
+   width: 0 this makes the element shrink */
+
+}
+
+
+.middle-header{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+
+.search-bar {
+    height: 36px;
+    padding-left: 10px;
+    flex: 1;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    width: 200px;
+  }
+
+  .side-bar{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 50px;
+    background-color: rgb(241, 203, 156);
+    top: 60px;
+  }
+
+  body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(246, 232, 210);
+    
+  }
