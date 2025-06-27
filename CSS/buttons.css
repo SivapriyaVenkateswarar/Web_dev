@@ -1,0 +1,100 @@
+
+            /* in order to give a default style for a particular HTML element we use:
+            p {
+                font-family: Times;
+                font-size:15px;
+            }
+                    (or)
+        
+            button {
+                font-family: Times;
+                font-size:15px;
+            } */
+        
+            /* CSS Specifcity: If both p and a class exist for a button (eg: .story_button)
+            the particular class will be selected. the class is called selector */
+            button {
+                margin-bottom: 20px;
+            }
+
+            .Story_button {
+                background-color: rgba(237, 146, 0, 0.951);
+                color: rgb(0, 0, 0);
+                border: none; 
+                border-radius: 30px; /* How rounded the border sides should be */
+                cursor: pointer; /*when hovering above the button, its cursor changes */
+                margin-right: 700px; /*distance between this button and another element*/
+                transition: background-color 0.4s; /*smoothly fading out the button when hovered over/clicked on 
+                always put transition in base css style and not in hover. actice, etc */
+                /* shows how the text should differ from the margin */
+                padding-top: 10px;
+                padding-bottom:10px;
+                /* allows to align all the buttons at the top regardless of text */
+                vertical-align: top;
+            }
+            /*button: css selector: which elements of the page we are targeting
+            background-color: css property: what we are changing
+            aqua: the value we are changing to */
+        
+            .Story_button:hover{
+                background-color: pink;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* casts a shadow behind the button (horizontal shadow, vertical , opacity, rgpa (a: alpha- opacity of the shadow color)) */
+        
+            }
+        
+            .Story_button:active{
+                background-color:rgb(35, 255, 222);
+            }
+        
+            /* hover:  Styles that are applied only when hovered over the button. */
+            
+            .artwork_button {
+                background-color: rgba(237, 146, 0, 0.951);
+                border-color: blue;
+                border-style: solid; /* No gradient colours */ 
+                border-width: 1px;
+                color:rgb(0, 0, 0);
+                height: 30px;
+                cursor: pointer;
+                margin-right: 600px;
+                transition: opacity 0.7s;
+                vertical-align: top;
+            }
+        
+            .artwork_button:hover{
+                opacity: 0.3; /*Fade out the button (0- button will disappear)*/
+            }
+        
+            /* active: Styles that appear when you click the button */
+        
+            .About{
+                background-color: rgba(237, 146, 0, 0.951);
+                height: 30px;
+                cursor: pointer;
+                color: black;
+                font-weight: 20px;
+                vertical-align: top;
+                margin-right: 100 px;
+            }
+        
+            .about:hover{
+                color:  rgb(0, 0, 0);
+                background-color: rgb(241, 200, 118);
+                transform: scale(1.1) /*stretches button when hovered */
+            }  /*inverts the text and background color */
+           
+
+            .header_button {
+                background: none;
+                padding-left: 0;
+                padding-right: 50px;
+                border: none;
+                height: 40px; /* Match search bar height */
+                width: 40px;  /* Adjust size as needed */
+                cursor: pointer;
+                border-radius: 0 4px 4px 0; /* Rounded corners on right side */
+                margin: 0; /* Removes default margin */
+                box-sizing: border-box; /* Ensures width includes padding and border */
+            }
+
+                    
