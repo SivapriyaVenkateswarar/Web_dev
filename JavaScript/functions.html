@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Functions</title>
+        </head> 
+        <body>
+            <button onclick="trial()">Trial</button>
+            <button onclick="console.log(return_type())">Trial</button>
+            <button onclick="const d=return_value()
+            console.log(d)">trial2</button>
+            <script>
+                let hello=5; //global variable (can be accessed anywhere) 
+                //Any variable created between the curly brackets are only defined in the brackst: Example in if statement and functions.
+                function trial(){
+                    console.log(2+3);
+                    console.log(hello);
+                }
+                function return_type(){
+                    return 5; //Returning a value from a function
+                    return; //return undefined 
+                }
+
+//return statement gets the value out of the function
+                function return_value(){
+                    let x=9+23;
+                    return x;
+                }
+
+                //parameter puts value into a functio
+                function parameter_func(para){
+                    console.log(para*0.1);
+                }
+
+                parameter_func(1200);
+            </script>
+        </body>
+    </html>
+</DOCTYPE>

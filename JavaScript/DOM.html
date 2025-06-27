@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <button> First </button>
+        <button onclick="but=document.querySelector('.JS')
+        if(but.innerHTML === 'Second'){
+            but.innerHTML='Subscribed';
+        }
+        else{
+            but.innerHTML='Second';
+        }" class="JS">Second</button>
+        <script>
+            // //DOM: built in object: Document Object Model: combines javascript and html together, and lets JS control html
+            // document.body.innerHTML='hello';
+            // //Object //Property(object) //inner object property
+            // //Document object and webpage are linked together. (represents/models the webpage)
+            // document.title='Good job!'; //Change the text at the top of the tab.
+            // console.log(document.title) //get the title
+
+            // console.log(document.body); //HTML element body will be put in the document.body
+            // console.log(typeof document.body); //HTML element converted to JS object
+            // console.log(document.body.innerHTML);
+            // document.body.innerHTML='<button> hello! </button>'
+            console.log(document.querySelector('button')); //element into js (only gets one element at a time)
+            console.log(document.querySelector('body').innerHTML) // shows the html inside the element
+            // to get html elements of a class
+            console.log(document.querySelector('.JS')) //.class inside querySelector bracket
+        
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>objects</title>
+        </head> 
+        <body>
+            <button onclick="f()">boop</button>
+            <script>
+
+                const product= {
+                    name: 'bello', //property value pair
+                    // seperated by comma
+                    price: 1200
+                }
+
+                product.name='change';
+                console.log(product.name);
+                product.newproperty='hii'
+                delete product.name;
+
+                function f(){
+                const score={
+                    wins:0,
+                    loss:0
+                }
+
+                if(score.wins>-1){
+                    score.wins=score.wins+1;
+                }
+                console.log(score.wins);
+
+                alert(`the valueS is ${score.wins}`);
+            }
+
+            product3={
+                name:'Sia',
+                'delivery-time':'1 hour',
+                rating: {
+                    stars:1.2,
+                    name: 'Ji'
+                },
+                fun: function fc(){ //function is also a value
+                    console.log('hi');
+                }
+            }
+            product3.fun();
+
+            //JSON:
+            //console, json (JS object notation), math, local storage: built in object
+            // JSON is used to repersent data, understood by all objects.
+            console.log(JSON.stringify(product3)); //JSON object converts JS to JSON
+            const json_String= JSON.stringify(product3);
+            console.log(product3.rating.stars); // console is a method
+            console.log(JSON.parse(json_String));
+            // log is a function inside 
+
+            //local storage:
+            //Saving values inside the local storage.
+            localStorage.setItem('message','score');
+            //First string is the name to access the value
+            //second string is the value to be stored. (only can be stored in string)
+
+            //reference inside the object does not change
+            //cant compare objects directly (only vompare the refernce but not values when using ===)
+            //get item: 
+            console.log(localStorage.getItem('message',JSON.stringify('score')));
+            
+            //ShortHand method
+            object4={
+            message:'Good Job',
+            score:0
+        }
+
+        //destructuring
+        const{message,score}=object4;
+
+        object5={
+            message, //same message as in object4
+            method: function f(){
+                console.log('Hi');
+            }
+        }
+
+        console.log(object5);
+        object5.method();
+
+            </script>
+        </body>
+    </html>
+</DOCTYPE>

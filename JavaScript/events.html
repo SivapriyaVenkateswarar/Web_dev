@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <p>Calculator</p>
+        <input placeholder="Cost of Order"
+        class="Js-cost-input" onkeydown="event_key(event)">
+
+        <button onclick="Calculate_total();" class="JS" onkeydown="
+        console.log('Pressing');"> <!--JS code running on the console 
+        when a key is pressed down on the keyboard-->
+        Calculate</button>
+        <p class="JS-TOTAL-COST"></p>
+    </head>
+    <body>
+    <script>
+
+        //window is for browser (window is default, JS adds it automatically)
+        window.document
+        window.console.log();
+        window.alert; //pop up windows
+
+        //clicks, keydown: events
+        //onclicks, onkeydowns: listens to events and runs js based on the event
+        function Calculate_total(){
+            let cost=Number(document.querySelector('.Js-cost-input').value); //convert string to number
+            cost=cost+10;
+
+            document.querySelector('.JS-TOTAL-COST').innerHTML=`$${cost}`;
+        }
+
+        //Event is an object that records whatever we do in our keyboard
+        //Event.key shows the keys we pressed.
+        function event_key(event){
+            if(event.key === 'Enter'){
+                Calculate_total();
+            }
+        }
+    </script>
+</body>
+</html>
